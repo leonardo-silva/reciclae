@@ -1,5 +1,6 @@
 export const strings = {
     form: {
-        email: 'E-mail'
+        lblEmail: 'E-mail',
+        lblPassword: 'Senha'
     }
 }
