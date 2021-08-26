@@ -1,10 +1,12 @@
 import React from 'react';
+import { StatusBar } from 'react-native';
 import { useFonts } from 'expo-font';
 import { WorkSans_400Regular } from '@expo-google-fonts/work-sans';
 
 import { SignIn } from './src/screens/SignIn';
 
 import AppLoading from 'expo-app-loading';
+import { Background } from './src/components/Background';
 
 export default function App() {
   /**
@@ -20,6 +22,14 @@ export default function App() {
   }
   
   return (
-    <SignIn />
+    <Background>
+      <StatusBar 
+        barStyle='dark-content'
+        backgroundColor="transparent"
+        translucent
+      />
+
+      <SignIn />
+    </Background>
   );
 }
