@@ -1,9 +1,35 @@
 import React from 'react';
+import { StatusBar } from 'react-native';
+import { useFonts } from 'expo-font';
+import { WorkSans_400Regular } from '@expo-google-fonts/work-sans';
 
-import { Home } from './src/screens/Home';
+import { SignIn } from './src/screens/SignIn';
+
+import AppLoading from 'expo-app-loading';
+import { Background } from './src/components/Background';
 
 export default function App() {
+  /**
+   To install font Work Sans: 
+      expo install expo-font @expo-google-fonts/work-sans
+   To be able to know if fontsLoaded before opening the application:
+      expo install expo-app-loading   
+  */
+  const [fontsLoaded] = useFonts({ WorkSans_400Regular });
+
+  if (! fontsLoaded) {
+    return <AppLoading/>
+  }
+  
   return (
-    <Home />
+    <Background>
+      <StatusBar 
+        barStyle='dark-content'
+        backgroundColor="transparent"
+        translucent
+      />
+
+      <SignIn />
+    </Background>
   );
 }
