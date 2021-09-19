@@ -1,12 +1,13 @@
 import React from 'react';
+import { registerRootComponent } from 'expo';
 import { StatusBar } from 'react-native';
 import { useFonts } from 'expo-font';
 import { WorkSans_400Regular } from '@expo-google-fonts/work-sans';
 
-import { SignIn } from './src/screens/SignIn';
-
 import AppLoading from 'expo-app-loading';
+
 import { Background } from './src/components/Background';
+import { Routes } from './src/routes';
 
 export default function App() {
   /**
@@ -29,7 +30,9 @@ export default function App() {
         translucent
       />
 
-      <SignIn />
+      <Routes />
     </Background>
   );
 }
+
+registerRootComponent(App);

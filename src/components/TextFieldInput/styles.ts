@@ -7,20 +7,20 @@ export const styles = StyleSheet.create({
         flexDirection: 'column'
     },
     text: {
-        fontSize: 18,
+        fontSize: 16,
         fontFamily: theme.fonts.text400,
         color: theme.colors.heading
     },
     required: {
-        fontSize: 18,
+        fontSize: 16,
         fontFamily: theme.fonts.text400,
         color: theme.colors.required,
         textAlignVertical: 'top'
     },
     input: {
         width: 289,
-        height: 65,
-        top: 10,
+        height: 60,
+        top: 8,
         left: -2,
         borderRadius: 28,
         backgroundColor: theme.colors.background,
