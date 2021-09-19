@@ -1,5 +1,7 @@
 import React from "react";
-import { View, Text, Alert, TouchableOpacity } from "react-native";
+import { View, Text, Alert } from "react-native";
+
+import { NativeStackScreenProps } from "@react-navigation/native-stack";
 
 import { BackForm } from "../../components/BackForm";
 import { BasicButton } from "../../components/BasicButton";
@@ -7,11 +9,22 @@ import { HeaderIcon } from "../../components/HeaderIcon";
 import { TextFieldInput } from "../../components/TextFieldInput";
 import { consts } from "../../global/consts/consts";
 import { strings } from "../../global/strings/strings";
-import { theme } from "../../global/styles/theme";
 
 import { styles } from "./styles";
 
-export function SignIn() {
+// To type check our route name and params, we need to create an object type with mappings for route name 
+// to the params of the route.
+// Specifying  undefined  means that the route doesn't have params. 
+// A union type with  undefined  (e.g. SomeType | undefined)  means that params are optional.
+// Ref: https://reactnavigation.org/docs/typescript/
+
+type RootStackParamList = {
+    SignUp: undefined;
+};
+
+type Props = NativeStackScreenProps<RootStackParamList>;
+
+export function SignIn({ navigation }: Props) {
     const [email, onChangeEmail] = React.useState("");
     const [password, onChangePassword] = React.useState("");
     const { lblEmail, lblPassword } = strings.form;
@@ -54,12 +67,17 @@ export function SignIn() {
                         <View style={styles.newusercontainer}>
                             <Text style={styles.text}>
                                 {strings.form.lblNewUser}
-                                <Text style={styles.link}>{` ${strings.form.lblClickHere}`}</Text>
+                                <Text 
+                                    style={styles.link}
+                                    onPress={() => { navigation.navigate('SignUp') }}
+                                >    
+                                    {` ${strings.form.lblClickHere}`}
+                                </Text>
                             </Text>
                         </View>
                     </View>
                 </BackForm>
             </View>
-</View>
+        </View>
     );
 }

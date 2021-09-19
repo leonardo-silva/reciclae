@@ -1,13 +1,12 @@
 import React from "react";
-import { View, Text, Alert, TouchableOpacity } from "react-native";
+import { View, Alert } from "react-native";
 
 import { BackForm } from "../../components/BackForm";
 import { BasicButton } from "../../components/BasicButton";
 import { HeaderIcon } from "../../components/HeaderIcon";
 import { TextFieldInput } from "../../components/TextFieldInput";
-import { consts } from "../../global/consts/consts";
 import { strings } from "../../global/strings/strings";
-import { theme } from "../../global/styles/theme";
+import { consts } from "../../global/consts/consts";
 
 import { styles } from "./styles";
 
@@ -32,14 +31,14 @@ export function SignUp() {
                             onChangeText={onChangeName}
                             required
                         />
-                        <View style={{ marginTop: 30 }}/>
+                        <View style={styles.spaceBetweenFields}/>
                         <TextFieldInput 
                             title={lblEmail}
                             keyboardType='email-address'
                             onChangeText={onChangeEmail}
                             required
                         />
-                        <View style={{ marginTop: 30 }} />
+                        <View style={styles.spaceBetweenFields} />
                         <TextFieldInput 
                             title={lblPassword}
                             keyboardType='default'
@@ -48,7 +47,7 @@ export function SignUp() {
                             secureTextEntry
                             required
                         />
-                        <View style={{ marginTop: 30 }} />
+                        <View style={styles.spaceBetweenFields} />
                         <TextFieldInput 
                             title={lblConfirmPwd}
                             keyboardType='default'
@@ -66,6 +65,6 @@ export function SignUp() {
                     </View>
                 </BackForm>
             </View>
-</View>
+        </View>    
     );
 }
