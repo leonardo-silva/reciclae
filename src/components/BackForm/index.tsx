@@ -3,6 +3,7 @@ import { LinearGradient } from "expo-linear-gradient";
 
 import { theme } from "../../global/styles/theme";
 import { styles } from "./styles";
+import { ScrollView } from "react-native";
 
 type Props = {
     children: ReactNode;
@@ -18,7 +19,9 @@ export function BackForm({ children }: Props) {
             style={styles.container}
             colors={[primary, background]}
         >
-            {children}
+            <ScrollView>
+                {children}
+            </ScrollView>    
         </LinearGradient>    
     );    
 }

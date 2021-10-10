@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Alert } from "react-native";
+import { View, Text, Alert, ScrollView } from "react-native";
 
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
 
@@ -30,7 +30,7 @@ export function SignIn({ navigation }: Props) {
     const { lblEmail, lblPassword } = strings.form;
 
     return (
-        <View style={styles.container}>
+        <ScrollView style={styles.container}>
             <View style={styles.header}>
                 <HeaderIcon />
             </View>
@@ -78,6 +78,6 @@ export function SignIn({ navigation }: Props) {
                     </View>
                 </BackForm>
             </View>
-        </View>
+        </ScrollView>
     );
 }
