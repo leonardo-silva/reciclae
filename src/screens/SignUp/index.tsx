@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Alert } from "react-native";
+import { View, Alert, ScrollView } from "react-native";
 
 import { BackForm } from "../../components/BackForm";
 import { BasicButton } from "../../components/BasicButton";
@@ -18,7 +18,7 @@ export function SignUp() {
     const { lblName, lblEmail, lblPassword, lblConfirmPwd } = strings.form;
 
     return (
-        <View style={styles.container}>
+        <ScrollView style={styles.container}>
             <View style={styles.header}>
                 <HeaderIcon />
             </View>
@@ -65,6 +65,6 @@ export function SignUp() {
                     </View>
                 </BackForm>
             </View>
-        </View>    
+        </ScrollView>    
     );
 }
