@@ -6,10 +6,12 @@ export const strings = {
         lblClickHere: 'Clique aqui',
         lblNewUser: 'Não tem conta ainda?',
         lblName: 'Nome',
-        lblConfirmPwd: 'Confirme a senha'
+        lblConfirmPwd: 'Confirme a senha',
+        lblEmailPwd: 'Enviaremos um e-mail de recuperacao de senha no endereco informado abaixo.',
     },
     basicButton: {
         title: 'Entrar',
-        save: 'Salvar'
+        save: 'Salvar',
+        send: 'Enviar'
     }
 }

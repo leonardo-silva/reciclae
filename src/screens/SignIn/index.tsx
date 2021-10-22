@@ -19,8 +19,11 @@ import { styles } from "./styles";
 // Ref: https://reactnavigation.org/docs/typescript/
 
 type RootStackParamList = {
+    ForgotPassword: undefined;
     SignUp: undefined;
 };
+
+
 
 type Props = NativeStackScreenProps<RootStackParamList>;
 
@@ -55,7 +58,12 @@ export function SignIn({ navigation }: Props) {
                         <View style={styles.textcontainer}>
                             <Text style={styles.text}>
                                 {strings.form.lblForgotPwd}
-                                <Text style={styles.link}>{` ${strings.form.lblClickHere}`}</Text>
+                                <Text
+                                    style={styles.link}
+                                    onPress={() => { navigation.navigate('ForgotPassword') }}
+                                >
+                                    {` ${strings.form.lblClickHere}`}
+                                </Text>
                             </Text>
                         </View>
                         <View style={styles.button}>
