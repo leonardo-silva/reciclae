@@ -19,7 +19,8 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.ifnmgsal.reciclae"
+      "bundleIdentifier": "com.ifnmgsal.reciclae",
+      "buildNumber": "1.0.0"
     },
     "android": {
       "adaptiveIcon": {

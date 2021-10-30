@@ -18,9 +18,9 @@ export const styles = StyleSheet.create({
         textAlignVertical: 'top'
     },
     input: {
-        width: 266,
+        width: '100%',
         height: 50,
-        top: 10,
+        top: 6,
         left: -2,
         borderRadius: 28,
         backgroundColor: theme.colors.background,

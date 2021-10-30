@@ -8,25 +8,25 @@ export const styles = StyleSheet.create({
         backgroundColor: theme.colors.background
     },
     header: {
-        marginTop: 25,
+        marginTop: 20,
         marginLeft: 25
     },
     content: {
         paddingHorizontal: 1,
-        paddingVertical: 30,
+        marginTop: 20,
         alignItems: 'center',
         justifyContent: 'center'
     },
     spaceBetweenFields: {
-        marginTop: 30
+        marginTop: 20
     },
     form: {
-        paddingVertical: 40,
+        marginTop: 20,
         paddingHorizontal: 40
     },
     button: {
         alignItems: 'center',
-        marginTop: 34
+        marginTop: 40
     },
     text: {
         fontSize: 13,
