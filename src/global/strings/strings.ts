@@ -7,11 +7,13 @@ export const strings = {
         lblNewUser: 'Não tem conta ainda?',
         lblName: 'Nome',
         lblConfirmPwd: 'Confirme a senha',
-        lblEmailPwd: 'Enviaremos um e-mail de recuperacao de senha no endereco informado abaixo.',
     },
     basicButton: {
         title: 'Entrar',
         save: 'Salvar',
         send: 'Enviar'
+    },
+    basicScreen: {
+        lblEmailPwd: 'Enviaremos os dados de recuperação\n de senha no email cadastrado',
     }
 }

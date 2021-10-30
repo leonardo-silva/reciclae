@@ -7,8 +7,8 @@ export const styles = StyleSheet.create({
     },
     circle1: {
         backgroundColor: theme.colors.primary,
-        width: 90,
-        height: 90,
+        width: 85,
+        height: 85,
         borderRadius: 50,
         justifyContent: 'center',
         alignItems: 'center',
@@ -16,16 +16,16 @@ export const styles = StyleSheet.create({
     },
     circle2: {
         backgroundColor: theme.colors.primary,
-        width: 75,
-        height: 75,
+        width: 70,
+        height: 70,
         borderRadius: 50,
         marginTop: 25,
         marginLeft: -35,
         zIndex: 0
     },
     icon: {
-        width: 90,
-        height: 90,
+        width: 85,
+        height: 85,
         marginBottom: 5
     }
 })

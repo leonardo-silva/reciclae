@@ -17,10 +17,6 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center'
     },
-    form: {
-        paddingVertical: 46,
-        paddingHorizontal: 46
-    },
     button: {
         alignItems: 'center',
         marginTop: 34
@@ -32,10 +28,10 @@ export const styles = StyleSheet.create({
         marginTop: 20,
     },
     text: {
-        fontSize: 13,
+        fontSize: 16,
         fontFamily: theme.fonts.text400,
         color: theme.colors.heading,
-        marginEnd: 22
+        textAlign: 'center',
     },
     link: {
         color: theme.colors.link,
