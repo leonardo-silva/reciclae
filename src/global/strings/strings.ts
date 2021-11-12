@@ -15,5 +15,8 @@ export const strings = {
     },
     basicScreen: {
         lblEmailPwd: 'Enviaremos os dados de recuperação\n de senha no email cadastrado',
+    },
+    auth: {
+        authError: 'Erro ao fazer login para este usuário e senha. Autenticação falhou.'
     }
 }

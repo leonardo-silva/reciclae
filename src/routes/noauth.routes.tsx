@@ -8,7 +8,7 @@ import { ForgotPassword } from "../screens/ForgotPassword";
 
 const { Navigator, Screen } = createNativeStackNavigator();
 
-export function AppRoutes() {
+export function NoAuthRoutes() {
     return (
         <Navigator>
             <Screen

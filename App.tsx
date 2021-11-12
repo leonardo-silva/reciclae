@@ -6,6 +6,7 @@ import { WorkSans_400Regular } from '@expo-google-fonts/work-sans';
 
 import AppLoading from 'expo-app-loading';
 
+import { AuthProvider } from "./src/hooks/auth";
 import { Background } from './src/components/Background';
 import { Routes } from './src/routes';
 
@@ -30,7 +31,9 @@ export default function App() {
         translucent
       />
 
-      <Routes />
+      <AuthProvider>
+        <Routes />
+      </AuthProvider>  
     </Background>
   );
 }
