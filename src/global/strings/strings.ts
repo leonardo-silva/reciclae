@@ -11,10 +11,17 @@ export const strings = {
     basicButton: {
         title: 'Entrar',
         save: 'Salvar',
-        send: 'Enviar'
+        send: 'Enviar',
+        exit: 'Sair'
     },
     basicScreen: {
         lblEmailPwd: 'Enviaremos os dados de recuperação\n de senha no email cadastrado',
+    },
+    homeButton: {
+        profile: 'Perfil',
+        request: 'Pedido de\n Coleta',
+        history: 'Histórico de\n Coletas',
+        help: 'Ajuda'
     },
     auth: {
         authError: 'Erro ao fazer login para este usuário e senha. Autenticação falhou.'
