@@ -8,17 +8,17 @@ export const styles = StyleSheet.create({
         backgroundColor: theme.colors.background
     },
     header: {
-        marginTop: 25,
+        marginTop: 15,
         marginLeft: 25
     },
     content: {
         paddingHorizontal: 1,
-        paddingVertical: 40,
+        paddingVertical: 10,
         justifyContent: 'center'
     },
     button: {
         alignItems: 'center',
-        marginTop: 60
+        marginTop: 70
     },
     homebuttons: {
         alignItems:'center',
@@ -28,7 +28,15 @@ export const styles = StyleSheet.create({
         marginTop: -70,
         paddingRight: 150
     },
+    help: {
+        marginTop: -70,
+        paddingRight: 150
+    },
     profile: {
+        paddingLeft: 150
+    },
+    history: {
+        marginTop: -35,
         paddingLeft: 150
     }
 });

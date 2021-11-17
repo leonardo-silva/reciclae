@@ -1,6 +1,6 @@
 import React from "react";
 import { LinearGradient } from "expo-linear-gradient";
-import { View, Text, Alert } from "react-native";
+import { View, Alert } from "react-native";
 
 import { styles } from "./styles";
 import { theme } from "../../global/styles/theme";
@@ -30,12 +30,26 @@ export function Home() {
                             image_id={0}
                             onPress={() => Alert.alert("Botao Perfil")}
                         />
-                    </View>
+                    </View>    
                     <View style={styles.request}>
                         <HomeButton
                             title={strings.homeButton.request}
                             image_id={1}
                             onPress={() => Alert.alert("Botao Pedido de Coleta")}
+                        />
+                    </View>
+                    <View style={styles.history}>
+                        <HomeButton
+                            title={strings.homeButton.history}
+                            image_id={2}
+                            onPress={() => Alert.alert("Botao Histórico de Coleta")}
+                        />
+                    </View>
+                    <View style={styles.help}>
+                        <HomeButton
+                            title={strings.homeButton.help}
+                            image_id={3}
+                            onPress={() => Alert.alert("Botao Ajuda")}
                         />
                     </View>
                 </View>
