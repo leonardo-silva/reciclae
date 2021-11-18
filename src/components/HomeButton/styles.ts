@@ -11,8 +11,8 @@ export const styles = StyleSheet.create({
         shadowRadius: 1, //IOS
         elevation: 2, // Android        
         borderRadius: 28,
-        width: 135,
-        height: 137,
+        width: 133,
+        height: 135,
         backgroundColor: theme.colors.primary,
         color: theme.colors.heading,
         justifyContent: 'center',
@@ -20,7 +20,7 @@ export const styles = StyleSheet.create({
     },
     title: {
         fontFamily: theme.fonts.text400,
-        fontSize: 18,
+        fontSize: 17,
         color: theme.colors.heading,
         marginBottom: 10
     },

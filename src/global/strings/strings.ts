@@ -25,5 +25,8 @@ export const strings = {
     },
     auth: {
         authError: 'Erro ao fazer login para este usuário e senha. Autenticação falhou.'
+    },
+    avatar: {
+        greeting: 'Olá'
     }
 }
