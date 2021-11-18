@@ -48,15 +48,18 @@ function AuthProvider({ children }: AuthProviderProps) {
             setLoading(true);
 
             // We set first name, token, and the rest (see type User) come from ...userInfo.data
-            setUser({
-                email: 'leonardo.silva@ifnmg.edu.br',
-                username: 'Leonardo Silva',
-                firstName: 'Leonardo',
-                avatar: 'https://github.com/leonardo-silva.png',
-                token: 'hjhjjjjsdheyyalkljrnbbgdajasdhakhdkajdhasdas'
-            } as User);
+            setTimeout(() => {
+                setUser({
+                    email: 'leonardo.silva@ifnmg.edu.br',
+                    username: 'Leonardo Silva',
+                    firstName: 'Leonardo',
+                    avatar: 'https://github.com/leonardo-silva.png',
+                    token: 'hjhjjjjsdheyyalkljrnbbgdajasdhakhdkajdhasdas'
+                } as User);
 
-            setLoading(false);
+                setLoading(false);
+            }, 2000);
+
         } catch {
             throw new Error(strings.auth.authError);
         }

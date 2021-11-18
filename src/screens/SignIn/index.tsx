@@ -79,11 +79,13 @@ export function SignIn({ navigation }: Props) {
                             {
                                 loading 
                                     ? <ActivityIndicator 
-                                        color={theme.colors.primary} /> 
+                                        color={theme.colors.primary} 
+                                        size="large"
+                                      />
                                     : <BasicButton 
                                         title={strings.basicButton.title} 
                                         onPress={handleSignIn}
-                                    />
+                                      />
                             }
                         </View>
                         <View style={styles.newusercontainer}>
