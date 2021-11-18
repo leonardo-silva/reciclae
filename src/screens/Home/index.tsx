@@ -5,12 +5,14 @@ import { View, Alert } from "react-native";
 import { styles } from "./styles";
 import { theme } from "../../global/styles/theme";
 import { strings } from "../../global/strings/strings";
+import { useAuth } from "../../hooks/auth";
 
 import { HeaderIcon } from "../../components/HeaderIcon";
 import { BasicButton } from "../../components/BasicButton";
 import { HomeButton } from "../../components/HomeButton";
 
 export function Home() {
+    const { signOut } = useAuth();
     const { primary, secondary, background } = theme.colors;
 
     return (
@@ -55,8 +57,8 @@ export function Home() {
                 </View>
                 <View style={styles.button}>
                     <BasicButton
-                        title={strings.basicButton.exit}
-                        onPress={() => Alert.alert("Botao Sair")}
+                        title={strings.basicButton.endSession}
+                        onPress={signOut}
                     />
                 </View>
             </View>

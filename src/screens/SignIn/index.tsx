@@ -25,8 +25,6 @@ type RootStackParamList = {
     SignUp: undefined;
 };
 
-
-
 type Props = NativeStackScreenProps<RootStackParamList>;
 
 export function SignIn({ navigation }: Props) {

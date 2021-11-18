@@ -9,7 +9,6 @@ export const styles = StyleSheet.create({
     },
     header: {
         marginTop: 20,
-        marginLeft: 25
     },
     content: {
         paddingHorizontal: 1,

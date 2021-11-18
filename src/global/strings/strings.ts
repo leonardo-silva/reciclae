@@ -12,6 +12,7 @@ export const strings = {
         title: 'Entrar',
         save: 'Salvar',
         send: 'Enviar',
+        endSession: 'Encerrar',
         exit: 'Sair'
     },
     basicScreen: {

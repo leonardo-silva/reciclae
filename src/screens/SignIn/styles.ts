@@ -8,8 +8,7 @@ export const styles = StyleSheet.create({
         backgroundColor: theme.colors.background
     },
     header: {
-        marginTop: 25,
-        marginLeft: 25
+        marginTop: 25
     },
     content: {
         paddingHorizontal: 1,
