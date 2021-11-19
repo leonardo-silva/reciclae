@@ -36,8 +36,15 @@ export function ForgotPassword({ navigation }: Props) {
                     <Text style={styles.text}>
                         {strings.basicScreen.lblEmailPwd}    
                     </Text>
-                    
                 </View>
+                <View style={styles.form}>
+                    <TextFieldInput 
+                        title={lblEmail}
+                        keyboardType='email-address'
+                        onChangeText={onChangeEmail}
+                        required
+                    />
+                </View>    
                 <View style={styles.button}>
                     <BasicButton
                         title={strings.basicButton.send}

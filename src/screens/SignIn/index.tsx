@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Alert, ScrollView } from "react-native";
+import { View, Text, Alert, ScrollView, ActivityIndicator } from "react-native";
 
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
 
@@ -7,10 +7,12 @@ import { BackForm } from "../../components/BackForm";
 import { BasicButton } from "../../components/BasicButton";
 import { HeaderIcon } from "../../components/HeaderIcon";
 import { TextFieldInput } from "../../components/TextFieldInput";
+
 import { consts } from "../../global/consts/consts";
 import { strings } from "../../global/strings/strings";
-
+import { theme } from "../../global/styles/theme";
 import { styles } from "./styles";
+import { useAuth } from "../../hooks/auth";
 
 // To type check our route name and params, we need to create an object type with mappings for route name 
 // to the params of the route.
@@ -23,14 +25,21 @@ type RootStackParamList = {
     SignUp: undefined;
 };
 
-
-
 type Props = NativeStackScreenProps<RootStackParamList>;
 
 export function SignIn({ navigation }: Props) {
+    const { loading, signIn } = useAuth();
     const [email, onChangeEmail] = React.useState("");
     const [password, onChangePassword] = React.useState("");
     const { lblEmail, lblPassword } = strings.form;
+
+    async function handleSignIn() {
+        try {
+            await signIn();
+        } catch (error) {
+            Alert.alert(error as string);
+        }
+    }
 
     return (
         <ScrollView style={styles.container}>
@@ -67,10 +76,17 @@ export function SignIn({ navigation }: Props) {
                             </Text>
                         </View>
                         <View style={styles.button}>
-                            <BasicButton 
-                                title={strings.basicButton.title} 
-                                onPress={() => Alert.alert(password)}
-                            />
+                            {
+                                loading 
+                                    ? <ActivityIndicator 
+                                        color={theme.colors.primary} 
+                                        size="large"
+                                      />
+                                    : <BasicButton 
+                                        title={strings.basicButton.title} 
+                                        onPress={handleSignIn}
+                                      />
+                            }
                         </View>
                         <View style={styles.newusercontainer}>
                             <Text style={styles.text}>

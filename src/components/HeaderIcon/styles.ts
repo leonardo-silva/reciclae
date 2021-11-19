@@ -3,7 +3,16 @@ import { theme } from "../../global/styles/theme";
 
 export const styles = StyleSheet.create({
     container: {
-        flexDirection: 'row'
+        flexDirection: 'row',
+        marginRight: 15,
+        marginLeft: 15
+    },
+    leftCorner: {
+        flexDirection: 'row',
+    },
+    profile: {
+        width: '100%',
+        alignItems: 'center',
     },
     circle1: {
         backgroundColor: theme.colors.primary,

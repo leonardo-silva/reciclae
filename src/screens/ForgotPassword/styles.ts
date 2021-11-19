@@ -9,7 +9,6 @@ export const styles = StyleSheet.create({
     },
     header: {
         marginTop: 25,
-        marginLeft: 25
     },
     content: {
         paddingHorizontal: 1,
@@ -33,21 +32,9 @@ export const styles = StyleSheet.create({
         color: theme.colors.heading,
         textAlign: 'center',
     },
-    link: {
-        color: theme.colors.link,
-        fontFamily: theme.fonts.text400,
-        fontSize: 13
-    },
-    newusercontainer: {
-        flexDirection: 'row',
-        alignItems: 'center',
-        justifyContent: 'center',
-        marginTop: 33,
+    form: {
+        width: '100%',
+        paddingVertical: 46,
+        paddingHorizontal: 46,
     },
 })
-/**    text: {
-        fontSize: 18,
-        fontFamily: theme.fonts.text400,
-        color: theme.colors.heading
-    },
- */

@@ -7,6 +7,7 @@ import { Home } from '../screens/Home';
 const { Navigator, Screen } = createNativeStackNavigator();
 
 export function AuthRoutes() {
+    // Stack of authenticated routes
     return (
         <Navigator>
             <Screen
