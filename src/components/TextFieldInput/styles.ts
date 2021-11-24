@@ -25,7 +25,9 @@ export const styles = StyleSheet.create({
         borderRadius: 28,
         backgroundColor: theme.colors.background,
         paddingHorizontal: 10,  
-
+        fontSize: 20,
+        fontFamily: theme.fonts.text400,
+        color: theme.colors.heading,
         shadowColor: theme.colors.shadow,
         shadowOffset: {
             width: 0,
