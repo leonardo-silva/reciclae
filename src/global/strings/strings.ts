@@ -29,5 +29,11 @@ export const strings = {
     },
     avatar: {
         greeting: 'Olá'
-    }
+    },
+    screenTitles: {
+        home: 'Tela inicial',
+        signIn: 'Login',
+        forgotPassword: 'Esqueci minha senha',
+        signUp: 'Cadastro'
+    } 
 }
