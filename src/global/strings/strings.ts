@@ -7,6 +7,8 @@ export const strings = {
         lblNewUser: 'Não tem conta ainda?',
         lblName: 'Nome',
         lblConfirmPwd: 'Confirme a senha',
+        question: 'Você tem um volume de materiais\n recicláveis para entregar que\n corresponde a, no mínimo, uma\n sacola de 100 litros cheia?',
+        doNotKnow: 'Não sabe sobre as condições\n para coleta? Então clique na\n interrogação abaixo!!'
     },
     basicButton: {
         title: 'Entrar',
@@ -16,7 +18,7 @@ export const strings = {
         exit: 'Sair'
     },
     basicScreen: {
-        lblEmailPwd: 'Enviaremos os dados de recuperação\n de senha no email cadastrado',
+        lblEmailPwd: 'Enviaremos os dados de recuperação\n de senha no email cadastrado'
     },
     homeButton: {
         profile: 'Perfil',
@@ -30,10 +32,17 @@ export const strings = {
     avatar: {
         greeting: 'Olá'
     },
+
     screenTitles: {
         home: 'Tela inicial',
         signIn: 'Login',
         forgotPassword: 'Esqueci minha senha',
-        signUp: 'Cadastro'
-    } 
+        signUp: 'Cadastro',
+        collectionRequest: 'Pedido de coleta'
+    }, 
+
+    smallButton: {
+        yes: 'Sim',
+        no: 'Não'
+    }
 }

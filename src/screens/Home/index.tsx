@@ -44,7 +44,7 @@ export function Home() {
                         <HomeButton
                             title={strings.homeButton.history}
                             image_id={2}
-                            onPress={() => Alert.alert("Botao Histórico de Coleta")}
+                            onPress={() => Alert.alert(strings.screenTitles.collectionRequest)}
                         />
                     </View>
                     <View style={styles.help}>
