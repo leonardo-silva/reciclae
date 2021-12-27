@@ -25,7 +25,7 @@ export function Home() {
                 <HeaderIcon />
             </View>
             <View style={styles.content}>
-                <View style={styles.homebuttons}>
+                <View style={styles.informationbuttons}>
                     <View style={styles.profile}>
                         <HomeButton
                             title={strings.homeButton.profile}

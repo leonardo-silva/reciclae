@@ -29,5 +29,15 @@ export const strings = {
     },
     avatar: {
         greeting: 'Olá'
+    },
+    informationButton:{
+        metal: 'Metal',
+        glass: 'Vidro',
+        plastic: 'Plastico',
+        paper: 'Papel',
+        separation: 'Como separar\n os materiais?',
+        volume: 'Volume\n minimo para\n coleta',
+        forecast: 'Previsao de\n coleta'
     }
+
 }
